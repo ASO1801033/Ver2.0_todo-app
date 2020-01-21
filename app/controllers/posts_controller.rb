@@ -7,8 +7,8 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
-  # GET /posts/1
-  # GET /posts/1.json
+  # GET /posts/id
+  # GET /posts/id.json
   def show
   end
 
@@ -17,7 +17,7 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  # GET /posts/1/edit
+  # GET /posts/id/edit
   def edit
   end
 
@@ -37,8 +37,8 @@ class PostsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /posts/1
-  # PATCH/PUT /posts/1.json
+  # PATCH/PUT /posts/id
+  # PATCH/PUT /posts/id.json
   def update
     respond_to do |format|
       if @post.update(post_params)
@@ -51,8 +51,8 @@ class PostsController < ApplicationController
     end
   end
 
-  # DELETE /posts/1
-  # DELETE /posts/1.json
+  # DELETE /posts/id
+  # DELETE /posts/id.json
   def destroy
     @post.destroy
     respond_to do |format|
