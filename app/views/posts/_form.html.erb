@@ -11,18 +11,20 @@
     </div>
   <% end %>
 
+  <%# タイトルの入力 %>
   <div class="field">
     <%= form.label :title %>
     <%= form.text_field :title %>
   </div>
 
+  <%# 内容の入力 %>
   <div class="field">
     <%= form.label :content %>
     <%= form.text_area :content %>
   </div>
 
+  <%# 新規作成のボタン %>
   <div class="actions">
-    <%# 新規作成のボタン %>
     <%= form.submit %>
   </div>
 <% end %>
